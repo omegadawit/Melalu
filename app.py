@@ -8,7 +8,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 app.config["SECRET_KEY"] = "supersecretkey"
 Session(app)
 
-@app.route('/')
+@app.route('/start')
 def index():
     if 'score' not in session:
         session['score'] = 0
